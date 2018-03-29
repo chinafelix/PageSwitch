@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>pageSwitch插件</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div id="container">
+		<div class="nodes">
+			<div class="node" id="first">
+				<div>
+					<h3>welcome to PageSwitch plugin demo!</h3>
+				</div>
+			</div>
+			<div class="node" id="second">
+				<div>
+					<h3>first class to learn write plugin!</h3>
+					<img src="images/1.png" alt="">
+				</div>
+			</div>
+			<div class="node" id="third">
+				<div>
+					<h3>second class to learn write plugin!</h3>
+					<img src="images/example.png" alt="">
+				</div>
+			</div>
+			<div class="node" id="fouth">
+				<div>
+					<h3>the end of plugin!</h3>
+					<img src="images/example2.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/pageSwitch.js"></script>
+	<script>
+		
+		$('#container').pageSwitch({
+			index: 1 ,
+			loop: false,
+			pagination: false,
+			direction: 'horizontal',
+			keyboard: true,
+			callback: function(data){
+				console.log(data);
+			},
+		});
+	</script>
+
+</body>
+</html>
