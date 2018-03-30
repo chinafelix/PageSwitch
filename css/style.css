@@ -72,10 +72,10 @@ img{
 	margin-left: -136px;
 }
 .hideNode h3{
-	left: -1000%;
+	left: 0;
 }
 .hideNode img{
-	right: -1000%;
+	right: 0;
 }
 .pagination-box{
 	position: fixed;
