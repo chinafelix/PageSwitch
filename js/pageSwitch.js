@@ -19,6 +19,8 @@
 				me.index = (me.settings.index >0 && me.settings.index < me.pageCount) ? me.settings.index : 0;
 				me.direction = me.settings.direction == "vertical" ? true : false ;
 				me.canScroll = true;
+				
+				me.node.eq(me.index).siblings().addClass('hideNode');
 
 				if(me.settings.pagination){
 					this.pagination();
@@ -109,6 +111,7 @@
 					offset = me.node.eq(me.index).position() ,
 					offsetCss = me.direction ? {top:-offset.top} : {left:-offset.left} ;
 				me.canScroll = false;
+				me.node.eq(me.index).removeClass('hideNode').siblings().addClass('hideNode');
 				me.nodes.animate(offsetCss,me.settings.duration ,function(){
 					me.canScroll = true;
 					if(me.settings.callback && $.type(me.settings.callback)=="function"){
