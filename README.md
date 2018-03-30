@@ -27,3 +27,7 @@ A full-screen jQuery travelling plugin
  
  默认生成分页按钮，点击分页按钮或者滚动鼠标滚轮，实现页面滑动切换；如果设置不支持分页，则滚动鼠标滚轮控制页面滑动；
  如果设置支持键盘控制，则可以使用键盘上的四个方向键控制页面滑动，默认支持键盘控制。
+
+
+## 点击下面链接，运行项目：
+ https://chinafelix.github.io/PageSwitch/
